@@ -1,0 +1,33 @@
+sudo nano /etc/phpmyadmin/config.inc.php
+
+In this file
+
+Copy and paste 
+
+$i++;
+$cfg['Servers'][$i]['host']          = '';
+$cfg['Servers'][$i]['port']          = '';
+$cfg['Servers'][$i]['socket']        = '';
+$cfg['Servers'][$i]['connect_type']  = 'tcp';
+$cfg['Servers'][$i]['extension']     = 'mysql';
+$cfg['Servers'][$i]['compress']      = FALSE;
+$cfg['Servers'][$i]['auth_type']     = 'config';
+$cfg['Servers'][$i]['user']          = '123';
+$cfg['Servers'][$i]['password']      = '123';
+
+You can replace user name and password
+
+sudo apt install mariadb-server
+sudo mysql_secure_installation
+
+sudo apt install php-mysql
+sudo mysql -u root -p
+SHOW DATABASES // to check Databases created 
+
+
+msg.topic = "INSERT INTO mqtt ('mqttin', 'mqttout') VALUES ('?', '?)";
+msg.payload = [date ,data];
+
+
+CREATE DATABASE 'name';
+CREATE TABLE 'name'(column_name type);
